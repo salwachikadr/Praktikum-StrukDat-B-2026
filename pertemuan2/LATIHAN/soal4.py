@@ -1,16 +1,17 @@
 mahasiswa = {
-    "A001": {"nama": "Budi", "prodi": "Informatika",
-    "ipk": 3.45},
-    "A002": {"nama": "Siti", "prodi": "Sistem Informasi", "ipk": 3.20},
-    "A003": {"nama": "Andi", "prodi": "Informatika",
-    "ipk": 3.75}
+    "A001": 
+    {"nama": "Budi", "prodi": "Informatika", "ipk": 3.45},
+    "A002": 
+    {"nama": "Siti", "prodi": "Sistem Informasi", "ipk": 3.20},
+    "A003": 
+    {"nama": "Andi", "prodi": "Informatika", "ipk": 3.75}
 }
 
     #mahasiswa ipk> 3,5
 print("Mahasiswa dengan IPK di atas 3.5:")
-for nim, data in mahasiswa.items():
-    if data["ipk"] > 3.5:
-        print(data["nama"])
+for nim, value in mahasiswa.items() :
+    if value["ipk"] > 3.5:
+        print(value["nama"])
 
     #rata rata ipk mahasiswa
 Total = 0          #menyimpan total IPK
